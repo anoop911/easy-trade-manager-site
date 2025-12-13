@@ -1,0 +1,272 @@
+...paste<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Trade Manager MT4 - Automated Trading Utility</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- COLOR PALETTE --- */
+        :root {
+            --color-blue: #3366FF;      /* Primary Blue / Action */
+            --color-red-pink: #FF3366;  /* Primary Red/Pink / Highlight */
+            --color-accent: #FFCC33;    /* Complementary Accent / Pop */
+            --color-dark-text: #1A1A1A; /* Universal Text/Contrast */
+            --color-white: #FFFFFF;     /* Base Color */
+            --color-light-gray: #F5F5F5;/* Base Color Secondary */
+        }
+
+        /* --- GLOBAL STYLES --- */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-white);
+            color: var(--color-dark-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER & HERO --- */
+        .hero {
+            background-color: var(--color-light-gray);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: var(--color-blue);
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-red-pink);
+            color: var(--color-white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #FF6699; /* Lighter Red/Pink */
+        }
+
+        /* --- FEATURE DETAILS SECTION --- */
+        .details-section {
+            padding: 60px 0;
+        }
+
+        .details-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--color-dark-text);
+            margin-bottom: 40px;
+        }
+
+        .metadata-bar {
+            background-color: var(--color-light-gray);
+            border-left: 5px solid var(--color-accent);
+            padding: 15px 20px;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.9em;
+        }
+
+        .metadata-item span {
+            font-weight: 600;
+            color: var(--color-blue);
+        }
+        
+        /* --- MAIN FEATURE GRID --- */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background-color: var(--color-white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--color-blue);
+            font-weight: 600;
+            font-size: 1.4em;
+            margin-top: 0;
+            border-bottom: 2px solid var(--color-red-pink);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-card li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .feature-card li::before {
+            content: '✓';
+            color: var(--color-red-pink);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+        }
+
+        .highlight {
+            color: var(--color-red-pink);
+            font-weight: 600;
+        }
+
+        /* --- MAGIC TRAIL SECTION --- */
+        .magic-trail-section {
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            padding: 60px 0;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .magic-trail-section h2 {
+            color: var(--color-accent);
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .magic-trail-section p {
+            font-size: 1.1em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Easy Trade Manager MT4</h1>
+            <p>Automate your risk management, trade with discretion, and let the market volatility work for you.</p>
+            <a href="https://tinyurl.com/etmmt4ea" target="_blank" class="cta-button">
+                Watch the User Video & Learn More
+            </a>
+        </div>
+    </div>
+
+    <div class="details-section">
+        <div class="container">
+            
+            <div class="metadata-bar">
+                <div class="metadata-item">
+                    **Utility:** <span class="highlight">Easy Trade Manager 4.78</span>
+                </div>
+                <div class="metadata-item">
+                    **Developer:** <span>Anoop Sivasankaran</span>
+                </div>
+                <div class="metadata-item">
+                    **Version:** <span>27.0</span>
+                </div>
+                <div class="metadata-item">
+                    **Updated:** <span>13 December 2024</span>
+                </div>
+                <div class="metadata-item">
+                    **Activations:** <span>5</span>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-style: italic; font-size: 1.1em; margin-bottom: 50px;">
+                <span class="highlight">New version with Panel updated!</span> (Thank you users for all your great feedback!)
+            </p>
+
+            <h2>Intelligent Automation & Discreet Trading</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <h3>Smart Sizing & Risk Control</h3>
+                    <p>Easily define your position size and risk before execution.</p>
+                    <ul>
+                        <li>Enter the <span class="highlight">Risked Amount</span> or <span class="highlight">Lot size</span> or <span class="highlight">% of Balance (New!)</span></li>
+                        <li>**Automatic lot** size calculation for precise risk management.</li>
+                        <li>**Trade with fixed Amount** or fixed Lot Size based on your strategy.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Discreet Order Execution (Stealth Mode)</h3>
+                    <p>Keep your trading intentions hidden from your broker until the moment of execution.</p>
+                    <ul>
+                        <li><span class="highlight">All orders are hidden</span> (you will not see it until it is executed!).</li>
+                        <li>All SL/TP levels are hidden from the broker, ensuring <span class="highlight">broker visibility only after execution</span>.</li>
+                        <li>**Hidden features** for scalping with Magic Trail in Version 14.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Intuitive Setup on Chart</h3>
+                    <p>Use visual lines on the chart for quick setup and dynamic adjustment.</p>
+                    <ul>
+                        <li>Drag the **RED line** on the chart to fix the Stop-Loss.</li>
+                        <li>Drag **Blue line (New!)** for Limit/Stop orders automatically!</li>
+                        <li>Adjust <span class="highlight">TP1, TP2 and TP3</span> lines easily.</li>
+                        <li>**Buy/Sell** > Adjust the lines even after the trade - <span class="highlight">New!</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="magic-trail-section">
+                <div class="container">
+                    <h2>Advanced Profit Protection & Trailing</h2>
+                    <p>
+                        **Automatic Breakeven TP1/2** | **Book Part/Partial Profit TP1-TP2** | **Automatic Magic Trail TP1/2**
+                    </p>
+                    <p style="margin-top: 20px; font-size: 1.2em;">
+                        The <span style="color: var(--color-accent); font-weight: 700;">New Magic Trail option</span> will automatically sense market volatility and **adjust/trail your TP3!** Try it!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 20px 0; font-size: 0.9em; color: gray;">
+            Easy Trade Manager MT4 Utility | Developed by Anoop Sivasankaran
+        </div>
+    </footer>
+
+</body>
+</html> the index.html content from above...
