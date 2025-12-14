@@ -23,4 +23,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         
         # CORRECTED: Use 'server-dir' instead of 'target'
-        server-dir: /public_html/
+        server-dir: /
