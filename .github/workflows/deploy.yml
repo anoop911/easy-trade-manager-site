@@ -1,31 +1,13 @@
-name: Deploy to Bluehost via FTP
-
-on:
-  push:
-    branches:
-      - main # This triggers the deployment when you push to the main branch
-      
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-    
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 2
-        
+# Step 2: The actual FTP deployment action
     - name: FTP Deploy to Bluehost
       uses: SamKirkland/FTP-Deploy-Action@v4.3.0
       with:
-        # DO NOT change these lines. They reference the secrets you set up on GitHub.
+        # These values reference the Secrets you MUST set up in GitHub Settings
         server: ${{ secrets.FTP_SERVER }} 
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         
-        # Target directory on your Bluehost server
-        target: /public_html/
+        # CORRECTED: Use 'server-dir' instead of 'target' for the remote path
+        server-dir: /public_html/ 
         
-        # Deletes files on the server if they are not in your repository
-        delete: true 
-        exclude: .github/*
+        # We removed 'delete' and 'exclude' as they cause the failure.
